@@ -1,4 +1,4 @@
-# http://travis-ci.org/#!/minrk/umsgpack
+# http://travis-ci.org/#!/minrk/msgpacku
 language: python
 sudo: false
 python:
@@ -9,4 +9,4 @@ python:
 install:
     - pip install .
 script:
-    - py.test test_umsgpack.py
+    - py.test test_msgpacku.py

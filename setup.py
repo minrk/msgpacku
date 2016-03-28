@@ -16,21 +16,21 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 # Get the current package version
 version_ns = {}
-with open(pjoin(here, 'umsgpack.py')) as f:
+with open(pjoin(here, 'msgpacku.py')) as f:
     for line in f:
         if line.startswith('__version__'):
             exec(line, {}, version_ns)
 
 
 setup_args = dict(
-    name                = 'umsgpack',
+    name                = 'msgpacku',
     version             = version_ns['__version__'],
-    py_modules          = ['umsgpack'],
+    py_modules          = ['msgpacku'],
     description         = "Unicode-friendly wrapper around msgpack.",
     long_description    = """A tiny wrapper around msgpack to use bin_type and text encoding by default.""",
     author              = "Min RK",
     author_email        = "benjaminrk@gmail.com",
-    url                 = "https://github.com/minrk/umsgpack",
+    url                 = "https://github.com/minrk/msgpacku",
     license             = "BSD",
     install_requires    = [
         'msgpack-python',

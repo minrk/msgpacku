@@ -1,4 +1,4 @@
-from umsgpack import packb, unpackb
+from msgpacku import packb, unpackb
 
 def roundtrip(obj):
     """roundtrip an object"""

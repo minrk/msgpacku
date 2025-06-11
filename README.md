@@ -1,5 +1,7 @@
 # msgpacku - unicode-friendly msgpack wrapper
 
+**archived: msgpack has fixed this issue in 1.0. There is no reason to use this package anymore.**
+
 `msgpacku` is a unicode-friendly msgpack wrapper. This does only one thing to each of `packb` and `unpackb`:
 change the defaults of msgpack-python to use the binary type by default,
 and decode text as utf8 by default.
